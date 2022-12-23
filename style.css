@@ -1,14 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&family=Outfit&family=Space+Grotesk:wght@500&display=swap');
 *{
     margin: 0;
     padding:0;
 }
-
+body{
+    font-size: 16px;
+    font-family: 'Epilogue', sans-serif;
+}
+html,body{
+    overflow-x: hidden;
+}
 a{
     text-decoration: none;
 }
 h2, h3, h4, h5, h6{
     font-size:40px;
     text-align:center;
+}
+img{
+    height: auto;
+    max-width: 100%;
+}
+ summary{
+    list-style: none;
 }
 .show{
 display:block;
@@ -34,91 +48,133 @@ display:block;
 .logo{
     font-size:25px;
 }
+.logo img{
+    width:100px;
+    height: 50px;
+}
 nav{
-    background-color: #800080;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     color:white;
     display:flex;
-    padding:1.5rem;
+    padding:1rem;
     width:100%;
+}
+nav ul{
+    display:flex;
 }
 nav li{
 display:inline;
+margin:2rem 0;
 }
 nav a{
-    margin:13px;
+   margin:1rem;
     font-size:18px;
-    color:white;
+    color:black;
     transition: .5s;
     cursor:pointer;
 }
-nav a:hover{
-    background-color: #cf9fff;
-    padding:7px;
-    border-radius:5px;
+nav a:hover, .service-txt:hover{
+    color:#800080;
+    font-weight: bold;
 }
 .menu{
     margin-left:30rem;
+    position: relative;
 }
-/* Hero Styling */
-.hero-container{
-    display:flex;
-    margin-bottom: 7rem;
+/*Drop down*/
+.service-dropdown{
+    display: flex;
+    padding: 1rem;
+    border-top:4px solid #800080;
+    flex-direction: column;
+    position: relative;
+    top:2rem;
+    width:7rem;
+    height:200px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
-.hero-text{
-    margin-top:10rem;
-    width:50%;
+details{
+    color:black;
 }
-/*Typewriter*/
-.type{
-    font-size:45px;
-    display:flex;
-    justify-content: center; 
+.service-txt{
+    font-size:18px;
 }
-.txt-type > .txt{
-    border-right:.2rem solid #cf9fff;
-    color:#cf9fff;
-}
-.hero-text h1{
-    font-size:60px;
-    margin-top:1rem;
-    text-align:center;   
-}
-.learn{
-    margin-top:1.5rem;
-    margin-left:2rem;  
-}
-.btn-learn{
-    padding: 15px 10px;
-}
-.hero-img{
-    width:50%;
-}
-.hero-img img{
-border-radius: 15px;  
-width:50%;
-height:auto;
-margin-left:12rem;
-margin-top:5rem;
-}
+   /*Slide styling*/
+   
+   .mySlides {display: none;}
 
-
-.waves{
-    margin-top:-16rem;
-}
+   /* Slideshow container */
+   .slideshow-container {
+     max-width: 1000px;
+     position: relative;
+     margin: auto;
+   }
+   .slideshow-container img{
+    opacity: .6;
+   }
+   /* Caption text */
+   .text {
+     color: #f2f2f2;
+     padding: 8px 12px;
+     position: absolute;
+    /* bottom: 108px;*/
+    top:30%;
+     width: 100%;
+   }
+   .text h1{
+    font-size:70px;
+    text-align:center;    
+   }
+    .text p{
+        margin-top: 3rem;
+        font-size:40px;  
+    }
+   
+   /* The dots/bullets/indicators */
+   .dot-container{
+    text-align:center;
+    display: none;
+   }
+   .dot {
+     height: 15px;
+     width: 15px;
+     margin: 0 2px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+   }
+   
+   .active {
+     background-color: #717171;
+   }
+   
+   /* Fading animation */
+   .fade {
+     animation-name: fade;
+     animation-duration: 1.5s;
+   }
+   
+   @keyframes fade {
+     from {opacity: .4} 
+     to {opacity: 1}
+   }
 /* About */
 .about-container{
-    width:50%;
-   margin:auto;
-   padding:5rem;
-   margin-top: 1rem;
-   box-shadow: 5px 8px #cf9fff;
-
+  display: flex;
+   margin: 4rem;
+   align-items: center;
+   justify-content: center;
 }
-.about-container h2{
-    margin-top:-4rem;
+.about-container img{
+    width:40%;
+}
+.about-txt{
+   margin-left: 3rem;
 }
 .about-container p{
-    font-size:1.75rem;
+    font-size:1.5rem;
     margin-top:3rem;
 }
 /*Services*/
@@ -128,29 +184,231 @@ margin-top:5rem;
 .container{
     display:flex;
 }
+
 .big-text{
     font-size:25px;
     margin-bottom:1rem;
 }
-.service1, .service2, .service3, .service4{
+.service{
     color:white;
-    background-color: #800080;
-    border: 1px solid grey;
     margin:1rem;
-padding:2em;
-box-shadow: 5px 8px #cf9fff;
+    display: flex;
+    flex-direction: column;
 }
-.services-icon{
-    font-size:30px;
+.service img{
+    max-width:100%;
+    height:200px;
+}
+.service-container-txt{
+    color:black;
+}
+.service-container-txt h4{
+    margin-top: 1.5rem;
+   font-weight: bold;
+}
+.service-container-txt p{
+    font-size: 18px;
+    padding-bottom: 1rem;
+}
+.link{
+    color:#cf9fff;
+    font-weight: bold;  
+}
+.link:hover{
+    color:#800080;
+}
+
+/*Teams*/
+.teams{
+    margin-top:3rem;
+}
+.container-team{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.team1,.team2, .team3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    margin-left:1rem;
+    margin-top:3rem;
+}
+.social-team i{
+    color:#800080;
+}
+.social-team i:hover{
+    color:white;
+}
+.container-team img{
+border-radius: 50%;
+width:40%;
+box-shadow: 5px 5px #cf9fff;
+}
+.container-team h4{
+    font-size: 25px;
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+.container-team p{
+    padding:1rem;
+}
+/*Reviews*/
+.review{
+    margin-top: 4rem;
+}
+
+/* Review container */
+.review-container {
+    margin-top:2rem;
+    position: relative;
+    background: #f1f1f1f1;
+  }
+  
+  /* Reviews */
+  .myReviews {
+    display: none;
+    padding: 80px;
     text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .back, .front {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .front {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .back:hover, .front:hover {
+    background-color: #1d031d;
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dots-container {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dots {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #cf9fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dots:hover {
+    background-color: #717171;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {
+    font-style: italic;
 }
-/*Founder*/
+  
+  /* Add a blue color to the author */
+  .author {
+    color:black ;
+    margin-top:1rem;
+    font-weight: bold;
+}
+
+
+
+/*******Pages *******/
+/*Consulting*/
+.banner{
+    width:100%;
+    height:400px;
+    background-image: url('/images/slide3.jpg');
+    background-size: cover;
+    opacity: .2;
+}
+
+.consulting h1{
+color:#1d031d;
+text-align: center;
+font-size: 80px;
+margin-top: 6rem;
+font-weight: 900;
+}
+.page-text{
+margin-top:4rem;
+margin-left: 2rem;
+}
+.page-text p{
+    font-size: 25px;
+}
+.policy{
+    margin-top: 3rem;
+}
+.policy ul{
+    list-style: circle;
+    margin:2rem;
+}
+.policy li{
+    font-size: 20px;
+    padding: 1rem;
+    margin-top:1rem;
+}
+/*News*/
+.blog-container{
+    margin-top: 4rem;
+}
+.blog-img{
+width:100%;
+height:auto;
+}
+.blog1, .blog2{
+padding:3rem;
+margin-left: 1rem;
+box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+.blog-container p{
+    padding: 1.5rem;
+    margin-bottom: 1.5rem; 
+    font-size:18px;  
+}
+.blog-container span{
+display:block;
+margin:5px;
+}
+.blog-container h2{
+    width:100%;
+    font-size:30px;
+}
+/*Founder
 .founder-img{
     height: auto;
     width:80%;
     margin-top:.5rem;
 }
-/*Events*/
+/*Events
 .recent-container{
   margin:1rem;
 padding:2em;
@@ -164,7 +422,7 @@ color:black;
     font-size: 1.5rem;
     margin:.7rem;
 }
-/*Pricing*/
+/*Pricing
 .pricing-container{
     margin-top: 1rem;
 }
@@ -206,34 +464,35 @@ list-style:none;
     border-radius: 100%;
     padding:5px;
 }
-/*Blog*/
-.blog-container{
-    margin-top: 1rem;
-}
-.blog-img{
-width:100%;
-height:auto;
-}
-.blog1, .blog2, .blog3{
-padding:3em;
-}
-.blog-container p{
-    color:white;
-    background-color: #800080;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem; 
-    font-size:18px;  
-}
-.blog-container span{
-display:block;
-margin:5px;
-}
+/*Blog
+
 /*Contact*/
 .contact-container{
     margin-top: 1rem;
 }
 form{
     background-color: white;
+}
+.forms-container{
+  display: flex;
+  margin-top:4rem;
+}
+.forms-container span{
+    color:red;
+}
+.forms-container p{
+    text-align: center;
+    font-size: 18px;
+    margin:1rem;
+}
+.form1, .form2{
+    flex:1;
+}
+.form1{
+    margin-top: 3rem;
+}
+.form2{
+    border-left: 5px solid #800080;
 }
 .form-field{
     display: flex;  
@@ -269,13 +528,23 @@ margin: .5rem;
 .submit:hover{
     background-color: #cf9fff;
 }
+
 /*Footer */
 .footer-container{
     color:white;
-    background-color: #800080;
+    background-color: #1d031d;
     margin-top: 4rem;
     display:flex;
+    padding: 4rem;
+    justify-content: space-between;
+}
+.footer-container p{
+    margin-top:1rem;
+    font-size: 17px;
+}
 
+.footer-container span{
+font-weight: bold;
 }
 .socials{
 display:flex;
@@ -284,28 +553,33 @@ display:flex;
     margin: 1rem;
     cursor:pointer;
     padding:.4rem;
+    font-size: 25px;
 }
 .socials i:hover{
-    background-color: #cf9fff;
     border-radius: 100%;
+    background-color: #800080;
 }
 .socials a{
     color:white;
 }
-.socials, .copy, .mail{
-    margin-right:10rem;
-}
+
 .attributions{
     margin-top:2rem;
-    display:flex;
-    justify-content:center;
 }
 .attributions a{
-font-size:18px;
-text-decoration: underline;
-color:white;
+    color:white;
+    font-weight: bold;
 }
+.attributions a:hover{
+color:lightgray;
+}
+
+
+
+
+
 /*Media Queries */
+
 @media(max-width:768px){
 .show{
     display:none;
@@ -315,34 +589,62 @@ color:white;
 }
         /*Menu*/
 .logo{
-            flex:3; 
+            flex:2; 
         }
- nav ul{
-        margin-left:7rem; 
+ /*nav ul{
+      margin-left:7rem;
         flex:1; 
     }
+    .menu{
+        margin-left:10rem;
+    }*/
 nav li{
      margin-bottom:.75rem;
  display:block;
- margin-left:-7rem;
+ margin-right:2.5rem;
 }
-    .menu{
-        margin-left:20rem;
-    }
+nav a{
+    margin:0;
+}
     .menu-open{
      cursor:pointer;
       font-size:1.75rem;
       margin-left:-3.75rem;
+      color: #800080;
     }
+    .menu-close{
+       position: absolute; 
+       top:0;
+    }
+/*Drop down*/
+.service-dropdown{
+    height:100px;
+    top:0;
+}
+.service-dropdown a{
+    margin-top: 1rem;
+}
+/*Slide*/
+.text p{
+    font-size:18px;  
+    margin-top:1rem;
+}
+.text h1{
+    font-size:20px;  
+    font-weight: bolder; 
+}
+
     /* Hero Styling */
+ /*   
 .hero-container{
     flex-direction: column-reverse;
 }
 .hero-text{
     margin-bottom:10rem;
-}
+}*/
 
 /*Typewriter*/
+/*
 .type{
   margin-left:1rem;
   margin-top:-10rem;
@@ -366,15 +668,26 @@ border-radius: 15px;
 width:80%;
 height:auto;
 margin:1rem;
-}
+}*/
 /* About */
 .about-container{
     width:100%;
    padding:2rem;
+   flex-direction:column-reverse;
+   margin:0 auto;
 }
+.about-container img{
+    width:95%;
+    margin:0 auto;
+}
+.about-txt{
+    width:80%;
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+ }
 .about-container h2{
     margin-top:-1rem;
-    margin-left:-7rem ;
+    margin-left:0rem ;
 }
 .about-container p{
     font-size:1.45rem;
@@ -384,20 +697,41 @@ margin:1rem;
 .container{
     flex-direction: column;
 }
+/*Teams*/
+.container-team{
+    flex-direction: column;
+}
+.team1, .team2, .team3{
+    margin-top:2rem;
+}
 /*Footer */
 .founder-text{
     margin-right:-7rem ;   
 font-size:33px;
 }
+.address{
+    margin-left: -2rem;
+}
 .footer-container{
     flex-direction: column;
 }
-.socials, .copy, .mail{
-    margin:1rem;
+
+/*******Pages *******/
+/*Consulting*/
+.consulting h1{
+    font-size: 60px;
+    margin-top:5rem;
+    }
 }
+/*Contact**/
+.forms-container{
+    flex-direction: column;
 }
-@media(max-width:830px){
-    .waves{
-        margin-top:-14rem;
-    }   
+.form1{
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+}
+.form2{
+    border-left: 5px solid white;
+    border-top:5px solid #800080;
 }

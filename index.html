@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="..." />
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.jpg"/>
     <title>Champions Global Consulting |Mentorship | Speaking</title>
     <!--------CSS HERE------->
     <link rel="stylesheet" href="style.css">
@@ -13,18 +14,26 @@
 </head>
 <body>
     <nav>
-        <div class="logo">CGC</div>
+        <div class="logo"><a href="index.html"><img src="images/logo.jpg" alt="CGC Logo"></a></div>
             <!--Desktop menu-->
             <div class="show">
             <div class="menu">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li>
+                  <details>
+                <summary class="service-txt">Our Services </summary> 
+                    <div class="service-dropdown">
+                       <a href="mentorship.html">Mentorship</a>
+                       <a href="consulting.html">Consulting</a>
+                       <a href="speaking.html">Speaking</a>
+                    </div>
+               </details>
+            </li>
+                <li><a href="news.html">News and Events</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </div>
         </div>
@@ -32,81 +41,191 @@
         <div class="hide">
             <ul>
                 <i class="fa fa-bars menu-open" id="icon-menu"></i>
-                <i class="fa fa-times menu-open " id="icon-menu-close" style="display:none"></i>
+                <i class="fa fa-times menu-open menu-close" id="icon-menu-close" style="display:none"></i>
                 <div class="show" id="menu-items">
-                <li class="menu-item"><a href="#">Home</a></li>
-                <li class="menu-item"><a href="#about">About</a></li>
-                <li class="menu-item"><a href="#services">Services</a></li>
-                <li class="menu-item"><a href="#reviews">Reviews</a></li>
-                <li class="menu-item"><a href="#pricing">Pricing</a></li>
-                <li class="menu-item"><a href="#">Blog</a></li>
-                <li class="menu-item"><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li>
+                    <details>
+                  <summary class="service-txt">Our Services </summary> 
+                      <div class="service-dropdown">
+                         <a href="mentorship.html">Mentorship</a>
+                         <a href="consulting.html">Consulting</a>
+                         <a href="speaking.html">Speaking</a>
+                      </div>
+                 </details>
+              </li>
+                <li><a href="news.html">News and Events</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </div>
             </ul>
         </div>
     </div>
     </nav>
     <!--nav ends-->
-    <!--hero starts-->
     <main>
-    <section class="hero">
-        <div class="hero-container">
-        <div class="hero-text">
-            <span id="txt-type" class="txt-type type"data-wait="2000" data-words='["Mentorship", "Coaching","Speaking"]'></span>
-            <h1> Champions Global Consulting </h1>
-           <div class="learn"><a href="#" class="btn btn-learn">Learn More</a></div> 
-        </div>
-        <div class="hero-img"> <img src="images/hero.jpg" alt="Proffesional Picture of Doctor Ahmed, Founder of Champions Global Consulting">
-            </div>
-        </div>
-    </section>
-    <div class="waves">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#cf9fff" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-      </svg>
+<!--slider starts-->
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="images/slide1.jpg" style="width:100%; height:auto">
+     <div class="text"> <h1>Champions Global Consulting</h1>
+        <p>Stimulating the mind and unravelling difficult thought processes</p>
     </div>
-     <!--hero ends-->
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="images/slide2.jpg" style="width:100%; height:auto">
+      <div class="text">
+        <h1>Champions Global Consulting</h1>
+        <p>Stimulating the mind and unravelling difficult thought processes</p>
+    </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="images/slide3.jpg" style="width:100%; height:auto">
+      <div class="text"><h1>Champions Global Consulting</h1>
+      <p>Stimulating the mind and unravelling difficult thought processes</p>
+    </div>
+    </div>
+    
+    </div>
+    <br>
+    
+    <div class="dot-container">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+<!--Slider ends-->
+
+      
      <!--about starts-->
      <section class="about-container" id="about" data-aos="zoom-in" data-aos-delay="50"data-aos-duration="1000">
-     <h2>Who We Are <i class="fa-solid fa-question"></i></h2>
-    <p> At Champions Global Consulting, we offer Mentoring and Career Coaching, deliver keynote addresses, and give
-        inspiring/motivating speeches on various occassions to suit a variety of audiences.
+    <img src="images/img1.jpg" alt="Image of Dr Abdulkareem giving a Mentoring session">
+    <div class="about-txt">
+    <!-- <h2>Champions Global Consulting</h2>-->
+    <p> At Champions Global Consulting, we believe that everyone has the potential to succeed and make a positive impact on the world and we are committed to providing high quality services that are tailored to the specific needs of our clients. Whether you are an individual looking for personal development, a company seeking guidance on
+       leadership and team building, or an organization looking to inspire an audience,
+        CGC is the right place to come. <a href="about.html">Learn More</a>
     </p>
+</div>
     </section>
       <!--about endss-->
       <!--services start-->
       <section class="services-container" id="services">
         <h3>Our Services</h3>
         <div class="container">
-       <div class="service1" data-aos="zoom-in" data-aos-delay="50"data-aos-duration="1000">
-        <p class="services-icon"><i class="fa fa-rocket" aria-hidden="true"></i></p>
-        <p class="big-text">Leadership and Management Consulting</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum qui corporis iste atque delectus 
-            reprehenderit!</p>
-       </div>
-       <div class="service2" data-aos="zoom-in" data-aos-delay="50"data-aos-duration="1000">
-       <p class="services-icon"> <i class="fas fa-user-graduate "></i></p>
-        <p class="big-text">Career Coaching </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum qui corporis iste atque delectus 
-            reprehenderit!</p>
-       </div>
-       <div class="service3" data-aos="zoom-in" data-aos-delay="50"data-aos-duration="1000">
-        <p class="services-icon"><i class="fa-solid fa-chalkboard-user "></i></p>
-        <p class="big-text">Motivational/ Inspirational Speeches </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum qui corporis iste atque delectus 
-            reprehenderit!</p>
-       </div>
-       <div class="service4" data-aos="zoom-in" data-aos-delay="50"data-aos-duration="1000">
-       <p class="services-icon"> <i class="far fa-comment-dots "></i></p>
-        <p class="big-text">Keynote Address </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum qui corporis iste atque delectus 
-            reprehenderit!</p>
+       <div class="service" data-aos="zoom-in" data-aos-delay="50"data-aos-duration="1000">
+        <img src="images/mentor.jpg" alt="woman in the middle of two students with medal">
+        <div class="service-container-txt">
+        <h4 class="big-text">Mentoring and Coaching <i class="fa fa-rocket" aria-hidden="true"></i></h4>
+        <p>We provide one-on-one support and guidance to individuals, 
+          subject & theme-based coaching, and group mentoring & coaching sessions.</p>
+            <a href="mentorship.html" class="link">Learn More</a>
        </div>
     </div>
+       <div class="service" data-aos="zoom-in" data-aos-delay="50"data-aos-duration="1000">
+        <img src="images/consult.jpg" alt="Multiple guys having a discussion">
+        <div class="service-container-txt">
+        <h4 class="big-text">Consulting <i class="fas fa-user-graduate "></i></h4>
+        <p>We offer a range of consulting services, including leadership development, team-building, 
+          and organizational performance improvement by providing personalized advice and support.</p>
+            <a href="consulting.html"class="link">Learn More</a>
+        </div>
+       </div>
+       <div class="service" data-aos="zoom-in" data-aos-delay="50"data-aos-duration="1000">
+        <img src="images/speak.jpg" alt="Young man holding a microphone and speaking">
+        <div class="service-container-txt">
+        <p class="services-icon"></p>
+        <h4 class="big-text">Speaking <i class="fa-solid fa-chalkboard-user "></i></h4>
+        <p>We are available to deliver inspirational, motivational, or educational presentations at workshops, seminars, symposia, conferences, graduation ceremonies, and other events. 
+          We can customize our presentations to fit the specific needs and goals of your organization.</p>
+            <a href="speaking.html" class="link">Learn More</a>
+            </div>
+       </div>
+
+    </div>
       </section>
+      <!--Team starts-->
+      <section class="teams">
+        <h3>Meet Our Teams</h3>
+        <div class="container-team">
+            <div class="team1">
+                <img src="images/founder.jpg" alt="">
+                <h4>Dr Ahmed,</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Similique officia assumenda sit nam nesciunt deleniti
+                     corporis hic tenetur inventore doloremque.</p>
+                <div class="socials social-team">
+                  <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="">  <i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>   
+            </div>
+            <div class="team2">
+                <img src="images/founder.jpg" alt="">
+                <h4>Dr Ahmed,</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Similique officia assumenda sit nam nesciunt deleniti
+                     corporis hic tenetur inventore doloremque.</p>
+                <div class="socials social-team">
+                  <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="">  <i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>   
+            </div>
+            <div class="team3">
+                <img src="images/founder.jpg" alt="">
+                <h4>Dr Ahmed,</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Similique officia assumenda sit nam nesciunt deleniti
+                     corporis hic tenetur inventore doloremque.</p>
+                <div class="socials social-team">
+                  <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="">  <i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>   
+            </div>
+        </div>
+      </section>
+      <!--Team ends-->
+      <!--Reviews starts-->
+      <section class="review">
+      <h3>What people are saying about us</h3>
+      <div class="review-container">
+
+        <div class="myReviews">
+          <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+          <p class="author">- John Keats</p>
+        </div>
+        
+        <div class="myReviews">
+          <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+          <p class="author">- Ernest Hemingway</p>
+        </div>
+        
+        <div class="myReviews">
+          <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+          <p class="author">- Thomas A. Edison</p>
+        </div>
+        
+        <a class="back" onclick="plusReview(-1)">❮</a>
+        <a class="front" onclick="plusReview(1)">❯</a>
+        
+        </div>
+        
+        <div class="dots-container">
+          <span class="dots" onclick="currentReview(1)"></span> 
+          <span class="dots" onclick="currentReview(2)"></span> 
+          <span class="dots" onclick="currentReview(3)"></span> 
+        </div>
+      </section>
+      <!--Reviews End-->
       <!--services end-->
         <!--founder starts-->
-     <section class="about-container" id="about" data-aos="zoom-in" data-aos-delay="50"data-aos-duration="1000">
+     <!--<section class="about-container" id="about" data-aos="zoom-in" data-aos-delay="50"data-aos-duration="1000">
         <h2 class="founder-text">Meet The Founder</h2>
         <img src="images/founder.jpg" class="founder-img" alt="Founder of Champions Global Consulting speaking at an event ">
        <p>
@@ -115,10 +234,10 @@
          Lorem ipsum dolor sit amet consectetur adipisicing elit.
          Animi quaerat inventore atque iste eius ex laboriosam dolorum fugit praesentium libero.
        </p>
-       </section>
+       </section>-->
          <!--founter endss-->
       <!--Recent events Starts-->
-      <section class="recent-container" id="recent" data-aos="zoom-in" data-aos-delay="50"data-aos-duration="1000">
+      <!--<section class="recent-container" id="recent" data-aos="zoom-in" data-aos-delay="50"data-aos-duration="1000">
         <h4>Recent Events</h4>
      <ul>
         <li><p>Guest Speaker:International Youth Day</p>
@@ -133,12 +252,12 @@
           <p>Date, Venue</p></li>
      </ul>
       </section>
-      <!--Recent events endss-->
+      Recent events endss-->
       <!--Reviews start-->
 
       <!--Reviews ends-->
       <!---Pricing Start-->
-      <section class="pricing-container" id="pricing">
+      <!--<section class="pricing-container" id="pricing">
         <h5>Pricing</h5>
         <div class="container">
             <div class="price1" data-aos="zoom-in" data-aos-delay="50"data-aos-duration="1000">
@@ -173,74 +292,28 @@
              </div>
         </div>
       </section>
-      <!---Pricing ends-->
-      <!--Blog Starts-->
-      <section class="blog-container" id="blog" >
-        <h6>Read Blog</h6>
-        <div class="container">
-        <div class="blog1" data-aos="zoom-in" data-aos-delay="50"data-aos-duration="1000">
-            <img src="images/blog2.jpg" alt="..." class="blog-img">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Delectus non officiis accusamus, illum magnam iusto laudantium impedit ab aut placeat <span>18th, September 2022</span></p>
-                
-                <a href="" class="btn">Read More</a>
-            </div>
-            <div class="blog2" data-aos="zoom-in" data-aos-delay="50"data-aos-duration="1000">
-                <img src="images/blog2.jpg" alt="..." class="blog-img">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Delectus non officiis accusamus, illum magnam iusto laudantium impedit ab aut placeat.<span>18th, September 2022</span></p>
-                    <a href="" class="btn">Read More</a>
-                </div>
-                <div class="blog2" data-aos="zoom-in" data-aos-delay="50"data-aos-duration="1000">
-                    <img src="images/blog2.jpg" alt="..." class="blog-img">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Delectus non officiis accusamus, illum magnam iusto laudantium impedit ab aut placeat.<span>18th, September 2022</span></p>
-                        <a href="" class="btn">Read More</a>
-                    </div>
-        </div>
-      </section>
-       <!--Blog ends-->
-       <!--Contact starts-->
-       <section class="contact-container" id="contact" data-aos="zoom-in" data-aos-delay="50"data-aos-duration="1000">
-        <h6>Contact Us</h6>
-        <form action="">
-            <div class="form-field">
-                <div class="form-validation"></div>
-            <label for="">Enter Your Name</label>
-            <input type="text" name="name" id="">
-        </div>
-        <div class="form-field">
-            <label for="">Enter Your Email</label>
-            <input type="email" name="email" id="" placeholder="example@mail.com">
-        </div>
-        <div class="form-field">
-            <label for="">Enter Your Message</label>
-            <textarea name="message" id="" ></textarea>
-            <!--<input type="email" name="message" class="text-area" id="">-->
-        </div>
-        <div class="form-field">
-            <input type="submit" value="Your message"class="submit">
-    </div>
-        </form>
-       </section>
-       <!--Contact endss-->
+     -Pricing ends-->
     </main>
     <!--footer starts-->
     <footer>
+        
         <div class="footer-container">
-            <div class="socials">
+          <div class="address">
+            <p><span>Email:</span>info@championsglobalconsulting.org</p>
+            <p><span>Phone:</span>+000 0000 000</p>
+            <p><span>Address:</span></p>
+        </div>
+        <div class="socials">
             <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
             <a href="">  <i class="fa-brands fa-twitter"></i></a>
              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
              <a href=""><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <div class="copy">
-                <p>&copy;2021 Champions Global Consulting</p>
-                <p>18, street Name, State, County</p>
-            </div>
-            <div class="mail">mailmail@gmail.com</div>
-            <div class="attributions">Developed by <a href="">Salamah</a></div>
+        <div class="copy">
+            <p>&copy;2022 Champions Global Consulting</p>
+            <div class="attributions">Developed by <a href="https://salamah.netlify.app">Salamah</a></div>
         </div>
+            </div>
     </footer>
     <!-------JS here----->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

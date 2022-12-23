@@ -18,16 +18,64 @@ closeMenu.addEventListener('click', ()=>{
     closeMenu.style.display='none'  
 })
 // Close Menu Onclick Menu Items
-for(var i=0; i<menuItems.length; i++){
+/*for(var i=0; i<menuItems.length; i++){
     let menu = menuItems[i];
     menu.addEventListener('click', ()=>{
         showMenu.style.display='none';
         openMenu.style.display='block';
         closeMenu.style.display='none'  
     })
+}*/
+// Slider
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
+//Text slider
+var reviewIndex = 1;
+showReview(reviewIndex);
+
+function plusReview(n) {
+  showReview(reviewIndex += n);
+}
+
+function currentReview(n) {
+  showReview(reviewIndex = n);
+}
+
+function showReview(n) {
+  var i;
+  var reviews = document.getElementsByClassName("myReviews");
+  var dots = document.getElementsByClassName("dots");
+  if (n > reviews.length) {reviewIndex = 1}    
+  if (n < 1) {reviewIndex = reviews.length}
+  for (i = 0; i < reviews.length; i++) {
+      reviews[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  reviews[ reviewIndex-1].style.display = "block";  
+  dots[ reviewIndex-1].className += " active";
+}
+
 // Typewriter
-const TypeWriter =function(txtElement, words, wait =3000){
+/*const TypeWriter =function(txtElement, words, wait =3000){
     this.txtElement = txtElement;
     this.word = words;
     this.txt = "";
@@ -79,4 +127,4 @@ function init(){
     const wait = txtElement.getAttribute('data-wait');
     // Init Typewriter
     new TypeWriter(txtElement,words, wait);
-}
+}*/
