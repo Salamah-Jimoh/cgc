@@ -74,6 +74,51 @@ function showReview(n) {
   dots[ reviewIndex-1].className += " active";
 }
 
+//Expand Text
+let moreLink1 = document.getElementById('moreLink1');
+let moreText1 = document.getElementById('more1');
+moreLink1.addEventListener('click',(e)=>{
+e.preventDefault()
+moreText1.style.display='inline';
+moreLink1.style.display='none';
+})
+//Shrink Text
+let lessLink1 = document.getElementById('lessLink1');
+lessLink1.addEventListener('click',(e)=>{
+  e.preventDefault()
+  moreText1.style.display='none';
+  moreLink1.style.display='inline';
+  })
+  //Expand Text
+let moreLink2 = document.getElementById('moreLink2');
+let moreText2 = document.getElementById('more2');
+moreLink2.addEventListener('click',(e)=>{
+e.preventDefault()
+moreText2.style.display='inline';
+moreLink2.style.display='none';
+})
+//Shrink Text
+let lessLink2 = document.getElementById('lessLink2');
+lessLink2.addEventListener('click',(e)=>{
+  e.preventDefault()
+  moreText2.style.display='none';
+  moreLink2.style.display='inline';
+  })
+    //Expand Text
+let moreLink3 = document.getElementById('moreLink3');
+let moreText3 = document.getElementById('more3');
+moreLink3.addEventListener('click',(e)=>{
+e.preventDefault()
+moreText3.style.display='inline';
+moreLink3.style.display='none';
+})
+//Shrink Text
+let lessLink3 = document.getElementById('lessLink3');
+lessLink3.addEventListener('click',(e)=>{
+  e.preventDefault()
+  moreText3.style.display='none';
+  moreLink3.style.display='inline';
+  })
 // Typewriter
 /*const TypeWriter =function(txtElement, words, wait =3000){
     this.txtElement = txtElement;

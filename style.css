@@ -128,7 +128,8 @@ details{
    }
     .text p{
         margin-top: 3rem;
-        font-size:40px;  
+        font-size:60px; 
+        width:80%; 
     }
    
    /* The dots/bullets/indicators */
@@ -243,9 +244,9 @@ details{
     color:white;
 }
 .container-team img{
-border-radius: 50%;
-width:40%;
-box-shadow: 5px 5px #cf9fff;
+border-radius: 30px;
+width:30%;
+box-shadow: 2px 2px 2px 2px lightgrey;
 }
 .container-team h4{
     font-size: 25px;
@@ -254,6 +255,16 @@ box-shadow: 5px 5px #cf9fff;
 }
 .container-team p{
     padding:1rem;
+}
+.more{
+    display: none;
+}
+.moreLink, .lessLink{
+    color:#800080;
+}
+.moreLink:hover, .lessLink:hover,
+.moreLink:focus, .lessLink:focus{
+color:#1d031d;
 }
 /*Reviews*/
 .review{
@@ -344,12 +355,20 @@ box-shadow: 5px 5px #cf9fff;
 /*Consulting*/
 .banner{
     width:100%;
-    height:400px;
-    background-image: url('/images/slide3.jpg');
+    height:600px;
+    background-image: url('images/slide3.jpg');
     background-size: cover;
     opacity: .2;
 }
-
+.banner-mentor{
+    background-image: url('images/img1.jpg');
+}
+.banner-consult{
+    background-image: url('images/consult2.jpg');
+}
+.banner-speak{
+    background-image: url('images/speak2.jpg');
+}
 .consulting h1{
 color:#1d031d;
 text-align: center;
@@ -626,49 +645,16 @@ nav a{
 }
 /*Slide*/
 .text p{
-    font-size:18px;  
+    font-size:22px;  
     margin-top:1rem;
+    width:100%;
 }
 .text h1{
-    font-size:20px;  
+    font-size:40px;  
     font-weight: bolder; 
 }
 
-    /* Hero Styling */
- /*   
-.hero-container{
-    flex-direction: column-reverse;
-}
-.hero-text{
-    margin-bottom:10rem;
-}*/
-
-/*Typewriter*/
-/*
-.type{
-  margin-left:1rem;
-  margin-top:-10rem;
-}
-.txt-type > .txt{
-    border-right:.2rem solid #cf9fff;
-    color:#cf9fff;
-}
-.waves{
-    margin-top:-2rem;
-}
-.hero-text h1{
-    font-size:40px;
-    margin:2rem;  
-}
-.hero-img{
-    width:100%;
-}
-.hero-img img{
-border-radius: 15px;  
-width:80%;
-height:auto;
-margin:1rem;
-}*/
+    
 /* About */
 .about-container{
     width:100%;
@@ -681,8 +667,7 @@ margin:1rem;
     margin:0 auto;
 }
 .about-txt{
-    width:80%;
-    margin-left: 0rem;
+    margin-left: .2rem;
     margin-bottom: 2rem;
  }
 .about-container h2{
@@ -690,9 +675,10 @@ margin:1rem;
     margin-left:0rem ;
 }
 .about-container p{
+    width:85%;
     font-size:1.45rem;
     margin-top:3rem;
-    margin-left:-1.5rem ;
+    margin-left: 0rem;
 }
 .container{
     flex-direction: column;
@@ -709,8 +695,9 @@ margin:1rem;
     margin-right:-7rem ;   
 font-size:33px;
 }
-.address{
-    margin-left: -2rem;
+
+.address p{
+   margin-left: -3rem;
 }
 .footer-container{
     flex-direction: column;
