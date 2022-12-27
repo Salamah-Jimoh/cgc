@@ -119,6 +119,21 @@ lessLink3.addEventListener('click',(e)=>{
   moreText3.style.display='none';
   moreLink3.style.display='inline';
   })
+   //Expand Text
+let moreLink4 = document.getElementById('moreLink4');
+let moreText4 = document.getElementById('more4');
+moreLink4.addEventListener('click',(e)=>{
+e.preventDefault()
+moreText4.style.display='inline';
+moreLink4.style.display='none';
+})
+//Shrink Text
+let lessLink4 = document.getElementById('lessLink4');
+lessLink4.addEventListener('click',(e)=>{
+  e.preventDefault()
+  moreText4.style.display='none';
+  moreLink4.style.display='inline';
+  })
 // Typewriter
 /*const TypeWriter =function(txtElement, words, wait =3000){
     this.txtElement = txtElement;

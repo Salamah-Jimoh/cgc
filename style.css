@@ -57,7 +57,6 @@ nav{
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     color:white;
     display:flex;
-    padding:1rem;
     width:100%;
 }
 nav ul{
@@ -195,6 +194,7 @@ details{
     margin:1rem;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 .service img{
     max-width:100%;
@@ -228,7 +228,7 @@ details{
     justify-content: center;
     align-items: center;
 }
-.team1,.team2, .team3{
+.team{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -395,6 +395,16 @@ margin-left: 2rem;
     padding: 1rem;
     margin-top:1rem;
 }
+.container-media{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-media img{
+    max-width: 40%;
+    height: auto;
+    margin: 1rem;
+}
 /*News*/
 .blog-container{
     margin-top: 4rem;
@@ -421,69 +431,6 @@ margin:5px;
     width:100%;
     font-size:30px;
 }
-/*Founder
-.founder-img{
-    height: auto;
-    width:80%;
-    margin-top:.5rem;
-}
-/*Events
-.recent-container{
-  margin:1rem;
-padding:2em;
-color:black;
-}
-.recent-container ul{
-    list-style:none;
-    box-shadow: 5px 8px #cf9fff;
-}
-.recent-container li{
-    font-size: 1.5rem;
-    margin:.7rem;
-}
-/*Pricing
-.pricing-container{
-    margin-top: 1rem;
-}
-.price1, .price2, .price3{
-    color:white;
-    background-color: #800080;
-    border: 1px solid grey;
-    margin:1rem;
-padding:3em;
-box-shadow: 5px 8px #cf9fff;  
-}
-.price-text{
-    text-align: left;
-    margin-top: -2.5rem;
-    margin-left: -2.5rem;
-    font-size:1.3rem;
-}
-.amt{
-    margin-top:1rem;
-    font-size:35px;
-    font-weight: 800;
-}
-.pricing-container span{
-
-    font-size:20px;
-    font-weight: normal;   
-}
-.pricing-container ul{
-list-style:none;
-}
-.pricing-container li{
-    margin:1rem;
-}
-.pricing-container a{
-    margin-top: 2rem;
-}
-.check-icon{
-    background-color: #cf9fff;
-    border-radius: 100%;
-    padding:5px;
-}
-/*Blog
 
 /*Contact*/
 .contact-container{
@@ -709,9 +656,12 @@ font-size:33px;
     font-size: 60px;
     margin-top:5rem;
     }
-}
+/*Media**/
 /*Contact**/
-.forms-container{
+.container-media img{
+    max-width: 80%;
+}
+.forms-container, .container-media{
     flex-direction: column;
 }
 .form1{
@@ -721,4 +671,5 @@ font-size:33px;
 .form2{
     border-left: 5px solid white;
     border-top:5px solid #800080;
+}
 }
