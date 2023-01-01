@@ -586,6 +586,9 @@ color:lightgray;
 /*Media Queries */
 
 @media(max-width:768px){
+    body{
+        transition: 1s;
+    }
 .show{
     display:none;
 }
@@ -594,15 +597,10 @@ color:lightgray;
 }
         /*Menu*/
 .logo{
+          margin-top:.9rem;
             flex:2; 
         }
- /*nav ul{
-      margin-left:7rem;
-        flex:1; 
-    }
-    .menu{
-        margin-left:10rem;
-    }*/
+
 nav li{
      margin-bottom:.75rem;
  display:block;
@@ -629,6 +627,9 @@ nav a{
 }
 .service-dropdown a{
     margin-top: 1rem;
+}
+.service-txt{
+    margin-left: 0;
 }
 /*Slide*/
 .text p{
@@ -693,7 +694,9 @@ font-size:33px;
 .footer-container{
     margin:0 .4rem;
 }
-
+.address p{
+    font-size: 15px;
+}
 .footer-container{
     flex-direction: column;
 }
